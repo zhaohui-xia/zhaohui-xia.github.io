@@ -18,7 +18,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhaohui-xia.github.io/about.html</loc>
+  <loc>https://zhaohui-xia.github.io/members.html</loc>
   <lastmod>2025-01-02T12:59:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -37,31 +37,5 @@
   <lastmod>2025-01-02T12:59:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://zhaohui-xia.github.io/indexen.html</loc>
-  <lastmod>2025-01-02T12:59:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhaohui-xia.github.io/abouten.html</loc>
-  <lastmod>2025-01-02T12:59:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://zhaohui-xia.github.io/researchen.html</loc>
-  <lastmod>2025-01-02T12:59:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://zhaohui-xia.github.io/publicationsen.html</loc>
-  <lastmod>2025-01-02T12:59:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://zhaohui-xia.github.io/contacten.html</loc>
-  <lastmod>2025-01-02T12:59:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
 
 </urlset>

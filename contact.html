@@ -1,129 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夏兆辉 华中科技大学 个人主页</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif, 微软雅黑;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50b3a2;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        section#main {
-            padding: 15px;
-            background: #ffffff;
-        }
-        section#main h1 {
-            font-size: 2.5em;
-            color: #333333;
-        }
-        section#main h2 {
-            font-size: 2em;
-            color: #50b3a2;
-        }
-        section#main p {
-            font-size: 1.2em;
-            color: #333333;
-        }
-        footer {
-            background: #333333;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .table-like {
-            display: flex; /* 使用flex布局 */
-            border: 1px solid #ffffff; /* 边框 */
-            margin: 10px; /* 外边距 */
-        }
-        .row {
-            display: flex; /* 每一行也是一个flex容器 */
-            border-bottom: 1px solid #FFFFFF; /* 行与行之间的边框 */
-        }
-        .cell {
-            flex: 1; /* 每个单元格平分空间 */
-            padding: 10px; /* 内边距 */
-            border-right: 1px solid #FFFFFF; /* 单元格之间的边框 */
-        }
-        .cell:last-child {
-            border-right: none; /* 最后一个单元格没有右边界 */
-        }
-    </style>
+    <title>Contact - Personal Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BF675VRRTN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BF675VRRTN');
+</script>
 <body>
     <header>
-        <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">Zhaohui Xia (夏兆辉)</span>&nbsp;&nbsp;Huazhong University of Science and Technology (华中科技大学)</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="/">首页&nbsp;Home</a></li>
-                        <li><a href="about.html">团队成员&nbsp;Members</a></li>
-                        <li><a href="research.html">研究领域&nbsp;Research</a></li>
-                        <li><a href="publications.html">发表论文&nbsp;publications</a></li>
-                        <li class="current"><a href="contact.html">联系方式&nbsp;Contact</a></li>
-                        <li><a href="indexen.html">English</a></li>
-                    </ul>
-                </nav>
-        </div>
+        <h1>Zhaohui Xia's Website</h1>
+        <p>Associate Professor at Huazhong University of Science and Technology</p>
     </header>
-
-    <section id="main">
-        <div class="container">
-            <p>通讯地址：湖北省武汉市洪山区珞喻路1037号先进制造大楼西楼B620</p>
-            <p>邮政编码：430074</p>
-            <p>邮箱：<a href="mailto:xiaz@hust.edu.cn">xiaz@hust.edu.cn</a></p>            
-        </div>
-    </section>
-
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Zhaohui Xia, Associate Professor / PhD Supervisor</h2>
+            <p>School of Mechanical Science and Engineering, <br>Huazhong University of Science and Technology (HUST)</p>
+            <p>Address: Room B620, Advanced Manufacturing Building West#, Luoyu Road 1037, Wuhan, China
+                <br>Email:<a style="text-decoration:underline; color: #50b3a2;" href="mailto:xiaz@hust.edu.cn">&nbsp;&nbsp;xiaz@hust.edu.cn</a>
+            </p>
+        </section>
+    </main>
     <footer>
-        <p>版权所有 &copy; 2024 夏兆辉</p>
+        <p>&copy; 2025 Zhaohui Xia's Website. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

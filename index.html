@@ -1,174 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>夏兆辉 华中科技大学 个人主页</title>
+    <title>Home - Personal Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif, 微软雅黑;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        /* 容器样式 */
+        .content-box {
+            display: flex;                /* 启用弹性布局 */
+            align-items: center;         /* 垂直居中 */
+            margin: 20px auto;           /* 上下边距20px，水平居中 */
+            max-width: 1000px;          /* 最大宽度限制 */
+            border: 1px solid #ddd;     /* 边框 */
+            border-radius: 8px;         /* 圆角 */
+            padding: 20px;              /* 内边距 */
+            background: #f9f9f9;       /* 背景色 */
+            gap: 30px;               /* 列间距 */
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+
+        /* 文字区域 */
+        .text-section {
+            flex: 1;                  /* 占据剩余空间 */
+            min-width: 300px;        /* 最小宽度限制 */
         }
-        header {
-            background: #50b3a2;
-            color: #ffffff;
-            padding-top: 10px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+
+        /* 图片区域 */
+        .image-section {
+            flex: 0 0 400px;        /* 固定宽度400px */
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 15px;
+
+        /* 图片样式 */
+        .image-section img {
+            width: 100%;           /* 宽度填满容器 */
+            height: auto;         /* 高度自适应 */
+            border-radius: 4px;  /* 图片圆角 */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 阴影效果 */
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        header .currentno a {
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            font-size: 18px;
-        }
-        section#main {
-            padding: 15px;
-            background: #ffffff;
-        }
-        section#main h1 {
-            font-size: 2.2em;
-            color: #333333;
-        }
-        section#main h2 {
-            font-size: 1.4em;
-            color: #50b3a2;
-        }
-        section#main p {
-            font-size: 1.2em;
-            color: #333333;
-        }
-        footer {
-            background: #333333;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .table-like {
-            display: flex; /* 使用flex布局 */
-            border: 1px solid #ffffff; /* 边框 */
-            margin: 10px; /* 外边距 */
-        }
-        .row {
-            display: flex; /* 每一行也是一个flex容器 */
-            border-bottom: 1px solid #FFFFFF; /* 行与行之间的边框 */
-        }
-        .cell {
-            /*flex: 1;  每个单元格平分空间 */
-            padding: 10px; /* 内边距 */
-            border-right: 1px solid #FFFFFF; /* 单元格之间的边框 */
-            width: 70%;
-        }
-        .cellright {
-            /* flex: 1;  每个单元格平分空间 */
-            padding: 10px; /* 内边距 */
-            border-right: 1px solid #FFFFFF; /* 单元格之间的边框 */
-            width: 30%;
-        }
-        .cell:last-child {
-            border-right: none; /* 最后一个单元格没有右边界 */
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .content-box {
+                flex-direction: column; /* 小屏幕垂直排列 */
+                gap: 20px;
+            }
+            
+            .image-section {
+                flex: none;        /* 取消固定宽度 */
+                width: 100%;      /* 全宽显示 */
+                max-width: 500px; /* 限制最大宽度 */
+            }
         }
     </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BF675VRRTN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BF675VRRTN');
+</script>
 <body>
     <header>
-        <div class="container">
-            <!-- <div id="branding">
-                <h1><span class="highlight">Zhaohui Xia (夏兆辉)</span>&nbsp;&nbsp;Huazhong University of Science and Technology (华中科技大学)</h1>
-            </div> -->
-            <nav>
-                <ul>
-                    <li class="current"><a href="/">Home&nbsp;首页</a></li>
-                    <li class="currentno"><a href="about.html">Members&nbsp;团队成员</a></li>
-                    <li class="currentno"><a href="research.html">Research&nbsp;研究领域</a></li>
-                    <li class="currentno"><a href="publications.html">Publications&nbsp;发表论文</a></li>
-                    <li class="currentno"><a href="contact.html">Contact&nbsp;联系方式</a></li>
-                    <li class="currentno"><a href="indexen.html">English</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Zhaohui Xia's Website</h1>
+        <p>Associate Professor at Huazhong University of Science and Technology</p>
     </header>
-
-    <section id="main">
-        <div class="container">
-            <h1>Zhaohui Xia（夏兆辉）</h1>
-            <div class="table-like">
-                <div class="row">
-                  <div class="cell">    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="content-box">
+                <div class="text-section">
+                    <h2>Zhaohui Xia</h2>
+                    <p></p>
                     <p>Associate Professor / PhD Supervisor</p>
                     <p>School of Mechanical Science and Engineering, <br>Huazhong University of Science and Technology (HUST)</p>
                     <p>Address: Room B620, Advanced Manufacturing Building West#, Luoyu Road 1037, Wuhan, China
-                        <br>Email:<a style="text-decoration:underline; color: #50b3a2;" href="mailto:xiaz@hust.edu.cn">xiaz@hust.edu.cn</a> 
-                    </p>    
-                    <p>Zhaohui Xia is an Associate Professor and PhD Supervisor at <span style="color: #50b3a2;">Huazhong University of Science and Technology (HUST)</span>, where he serves as the head of the CAD Research Center, Principal Investigator of the National Key R&D Program (Young Scientist Track) and Huazhong Distinguished Scholar. 
-                        <br>
-                        He received his Ph.D. in Mechanical Manufacturing and Automation from HUST in 2016, followed by postdoctoral research in medical-engineering integration at <span style="color: #50b3a2;">Rensselaer Polytechnic Institute (USA)</span> and <span style="color: #50b3a2;">Harvard Medical School/BIDMC</span> (2016–2020). 
+                        <br>Email:<a style="text-decoration:underline; color: #50b3a2;"
+                            href="mailto:xiaz@hust.edu.cn">&nbsp;&nbsp;xiaz@hust.edu.cn</a>
                     </p>
-                    <p>
-                        Research interests: Computational Design for Additive Manufacturing, Geometric Modeling, Topology Optimization, Isogeometric Analysis, and Artificial Intelligence / Machine Learning.
-                    </p>
-                    <p style="color: #e8491d;">
-                        I am actively seeking creative and highly motivated MS and PhD students who are passionate about research.
-                    </p>
-                    <p>夏兆辉，华中科技大学机械科学与工程学院副教授，博士生导师，国家重点研发计划青年项目首席科学家，湖北省高层次海外人才，华中卓越学者。
-                        现担任华中科技大学国家企业信息化应用支撑软件工程技术研究中心（武汉）负责人。
-                    </p>
-                    <p>主要从事机械产品数字化设计及其工业软件方向的教学与科研工作，主讲《机械设计理论与方法（三）》等课程3门，围绕航空航天、武器等重点领域关键产品设计需求，从事自主可控CAD/CAE设计分析优化一体化软件技术等研究。
-                    </p>
-            
-                    </div>
-                  <div class="cellright"><img src="images/zhaohuixia.jpg" style="margin-top: 20px;"></img></div>
+                </div>
+                <div class="image-section">
+                    <img src="images/zhaohuixia.jpg" style="margin-top: 20px;  width: 60%; height: auto; display: block;  "
+                        alt="Zhaohui Xia at Huazhong University of Science and Technology"></img>
                 </div>
             </div>
             
-            <h2>Education & Work History</h2>
-            <p>-2020.01-Now，<a style="text-decoration:underline; color: #50b3a2;" href="https://www.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>, Assistant Professor / Associate Professor</p>
-            <p>-2016.09~2020.01，<a style="text-decoration:underline; color: #50b3a2;" href="https://www.rpi.edu/" target="_blank">Rensselaer Polytechnic Institute</a>, Postdoctoral Research Associate</p>
-            <p>-2018.09-2019.03，<a style="text-decoration:underline; color: #50b3a2;" href="https://www.harvard.edu/" target="_blank">Beth Israel Deaconess Medical Center (BIDMC) of Harvard Medical School</a>, Research Collaborator</p>
-            <p>-2012.09-2016.06，<a style="text-decoration:underline; color: #50b3a2;" href="https://www.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>, Mechanical Manufacturing and Its Automation, Ph.D</p>
-        </div>
-    </section>
-
+            <p>Zhaohui Xia is an Associate Professor and PhD Supervisor at <span style="color: #50b3a2;">Huazhong University of
+                    Science and Technology (HUST)</span>, where he serves as the head of the CAD Research Center, Principal
+                Investigator of the National Key R&D Program (Young Scientist Track) and Huazhong Distinguished Scholar.
+                <br>
+                He received his Ph.D. in Mechanical Manufacturing and Automation from HUST in 2016, followed by postdoctoral
+                research in medical-engineering integration at <span style="color: #50b3a2;">Rensselaer Polytechnic Institute
+                    (USA)</span> and <span style="color: #50b3a2;">Harvard Medical School/BIDMC</span> (2016–2020).
+            </p>
+            <p style="color: #e8491d;">
+                I am actively seeking creative and highly motivated MS and PhD students who are passionate about research.
+            </p>
+            <p>夏兆辉，华中科技大学机械科学与工程学院副教授，博士生导师，国家重点研发计划青年项目首席科学家，湖北省高层次海外人才，华中卓越学者。
+                现担任华中科技大学国家企业信息化应用支撑软件工程技术研究中心（武汉）负责人。
+            </p>
+            <p>主要从事机械产品数字化设计及其工业软件方向的教学与科研工作，主讲《机械设计理论与方法（三）》等课程3门，围绕航空航天、武器等重点领域关键产品设计需求，从事自主可控CAD/CAE设计分析优化一体化软件技术等研究。
+            </p>
+        </section>
+    </main>
     <footer>
-        <p>Copyright &copy; 2024 Huazhong University of Science and Technology (HUST), Zhaohui Xia（夏兆辉）</p>
+        <p>&copy; 2025 Zhaohui Xia's Website. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
