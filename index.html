@@ -5,66 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhaohui Xia's Academic Website - Huazhong University of Science and Technology</title>
-    <meta name="description" content="Zhaohui Xia's Website, computational design for additive manufacturing, geometric modeling, topology optimization, isogeometric analysis, and artificial intelligence, etc., which aim to develope design methods and computer tools to advance multi-physics applications.">
-    <meta name="keywords" content="computational design for additive manufacturing, geometric modeling, topology optimization, isogeometric analysis, and artificial intelligence, etc. 结构智能设计, 拓扑优化, 等几何分析, 并行计算, 人工智能, 深度学习">
+    <meta name="description"
+        content="Zhaohui Xia's Website, computational design for additive manufacturing, geometric modeling, topology optimization, isogeometric analysis, and artificial intelligence, etc., which aim to develope design methods and computer tools to advance multi-physics applications.">
+    <meta name="keywords"
+        content="computational design for additive manufacturing, geometric modeling, topology optimization, isogeometric analysis, and artificial intelligence, etc. 结构智能设计, 拓扑优化, 等几何分析, 并行计算, 人工智能, 深度学习">
     <link rel="stylesheet" href="styles.css">
     <style>
         /* 容器样式 */
         .content-box {
-            display: flex;                /* 启用弹性布局 */
-            align-items: center;         /* 垂直居中 */
-            margin: 20px auto;           /* 上下边距20px，水平居中 */
-            max-width: 1000px;          /* 最大宽度限制 */
-            border: 1px solid #ddd;     /* 边框 */
-            border-radius: 8px;         /* 圆角 */
-            padding: 20px;              /* 内边距 */
-            background: #f9f9f9;       /* 背景色 */
-            gap: 30px;               /* 列间距 */
+            display: flex;
+            /* 启用弹性布局 */
+            align-items: center;
+            /* 垂直居中 */
+            margin: 20px auto;
+            /* 上下边距20px，水平居中 */
+            max-width: 1000px;
+            /* 最大宽度限制 */
+            border: 1px solid #ddd;
+            /* 边框 */
+            border-radius: 8px;
+            /* 圆角 */
+            padding: 20px;
+            /* 内边距 */
+            background: #f9f9f9;
+            /* 背景色 */
+            gap: 30px;
+            /* 列间距 */
         }
-
+    
         /* 文字区域 */
         .text-section {
-            flex: 1;                  /* 占据剩余空间 */
-            min-width: 300px;        /* 最小宽度限制 */
+            flex: 1;
+            /* 占据剩余空间 */
+            min-width: 300px;
+            /* 最小宽度限制 */
         }
-
+    
         /* 图片区域 */
         .image-section {
-            flex: 0 0 400px;        /* 固定宽度400px */
+            flex: 0 0 400px;
+            /* 固定宽度400px */
         }
-
+    
         /* 图片样式 */
         .image-section img {
-            width: 100%;           /* 宽度填满容器 */
-            height: auto;         /* 高度自适应 */
-            border-radius: 4px;  /* 图片圆角 */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 阴影效果 */
+            width: 100%;
+            /* 宽度填满容器 */
+            height: auto;
+            /* 高度自适应 */
+            border-radius: 4px;
+            /* 图片圆角 */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* 阴影效果 */
         }
-
+    
         /* 响应式设计 */
         @media (max-width: 768px) {
             .content-box {
-                flex-direction: column; /* 小屏幕垂直排列 */
+                flex-direction: column;
+                /* 小屏幕垂直排列 */
                 gap: 20px;
             }
-            
+    
             .image-section {
-                flex: none;        /* 取消固定宽度 */
-                width: 100%;      /* 全宽显示 */
-                max-width: 500px; /* 限制最大宽度 */
+                flex: none;
+                /* 取消固定宽度 */
+                width: 100%;
+                /* 全宽显示 */
+                max-width: 500px;
+                /* 限制最大宽度 */
             }
         }
     </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BF675VRRTN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BF675VRRTN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-BF675VRRTN');
-</script>
+        gtag('config', 'G-BF675VRRTN');
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Zhaohui Xia 夏兆辉",
+            "affiliation": "Huazhong University of Science and Technology",
+            "url": "https://zhaohui-xia.github.io",
+             "sameAs": [
+                "https://www.researchgate.net/profile/Zhaohui-Xia",
+                "https://scholar.google.com/citations?user=P6LPxBQAAAAJ",
+                "http://faculty.hust.edu.cn/xiazhaohui",
+                "https://mse.hust.edu.cn/info/1144/1410.htm"
+                ]
+        }
+    </script>
+</head>
 <body>
     <header>
         <h1>Zhaohui Xia's Website</h1>
@@ -109,8 +146,11 @@
             <p style="color: #e8491d;">
                 I am actively seeking creative and highly motivated MS and PhD students who are passionate about research.
             </p>
-            <p>Official Website:<a href="http://faculty.hust.edu.cn/xiazhaohui"> <span
-                        style="text-decoration: underline;color: #2407fe;">http://faculty.hust.edu.cn/xiazhaohui</span></a>
+            <p>Official Website:<br>
+                <a href="http://faculty.hust.edu.cn/xiazhaohui"> <span
+                        style="text-decoration: underline;color: #2407fe;">http://faculty.hust.edu.cn/xiazhaohui</span></a><br>
+                <a href="https://mse.hust.edu.cn/info/1144/1410.htm"> <span
+                        style="text-decoration: underline;color: #2407fe;">https://mse.hust.edu.cn/info/1144/1410.htm</span></a>
             </p>
             <p>Google Scholar:<a href="https://scholar.google.com/citations?user=P6LPxBQAAAAJ&hl=en"> <span
                         style="text-decoration: underline;color: #2407fe;">https://scholar.google.com/citations?user=P6LPxBQAAAAJ&hl=en</span></a>
